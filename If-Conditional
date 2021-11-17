@@ -1,0 +1,28 @@
+#crear un programa que me pida 3 numeros y determine cual es mayor
+
+n1 = int (input ("Introduzca primer numero: "))
+n2 = int (input ("Introduzca Segundo numero: "))
+n3 = int (input ("Introduzca Tercer numero: "))
+
+if n1 == n2 and n1 == n3 and n2 == n3:
+    print ("Los tres numeros son iguales")
+elif n1 > n2 and n1 > n3 and n2 > n3:
+    print (f"{n1} es mayor que {n2}, y {n1} es mayor que {n3}, {n2} es mayor que {n3}")
+elif n1 < n2 and n1 < n3 and n2 < n3:
+    print (f"{n1} es menor que {n2}, y {n1} es menor que {n3}, y {n2} es menor que {n3}")
+elif n1 == n2 and n1 > n3 and n2 > n3:
+    print (f"{n1} es igual que {n2}, y {n1} es mayor que {n3}, y {n2} es mayor que {n3}")
+elif n1 == n2 and n1 < n3 and n2 > n3:
+    print (f"{n1} es igual que {n2}, y {n1} es menor que {n3} y {n2} es mayor que {n3}")
+elif n1 == n2 and n1 < n3 and n2 < n3:
+    print (f"{n1} es igual que {n2}, y {n1} es menor que {n3} y {n2} es menor que {n3}")
+elif n1 == n2 and n1 > n3 and n2 < n3:
+    print (f"{n1} es igual que {n2}, y {n1} es mayor que {n3} y {n2} es menor que {n3}")
+elif n1 < n2 and n1 > n3 and n2 > n3:
+    print (f"{n1} es menor que {n2}, y {n1} es mayor que {n3} y {n2} es mayor que {n3}")
+elif n1 < n2 and n1 > n3 and n2 < n3:
+    print (f"{n1} es menor que {n2}, y {n1} es mayor que {n3} y {n2} es menor que {n3}")
+elif n1 < n2 and n1 < n3 and n2 > n3:
+    print (f"{n1} es menor que {n2}, y {n1} es menor que {n3} y {n2} es mayor que {n3}")
+else: 
+    print ("Numeros invalidos")
