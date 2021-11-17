@@ -1,0 +1,27 @@
+#cajero automatico python
+import sys
+saldo = 2000
+print ("~~~~~~~~~~~~~~~~~~~~~~~~~Bienvenido al Cajero Automatico~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+print ("1.- Ingrese el Dinero")
+print ("2.- Retire el Dinero")
+print ("3.- Mostrar Balance")
+print ("4.- Salir")
+
+Seleccion = int (input("Elija una opcion: "))
+
+if Seleccion == 1:
+    ingreso = float(input("Dinero a ingresar: "))
+    saldo = saldo + ingreso
+    print (f"Su nuevo balance es: {saldo}")
+elif Seleccion == 2:
+    retiro = float(input("Cantidad a retirar: "))
+    saldo = saldo - retiro
+    print (f"Su nuevo balance es: {saldo}")
+elif Seleccion == 3:
+    balance = saldo
+    print (f"Su balance total es: {balance}")
+
+else: 
+    Seleccion == 4
+    print ("Adios")
+    sys.exit ()
